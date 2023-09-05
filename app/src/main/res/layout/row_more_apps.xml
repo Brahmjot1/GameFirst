@@ -69,7 +69,7 @@
                 android:layout_marginRight="@dimen/size_8dp"
                 android:layout_marginBottom="@dimen/size_8dp">
 
-                <com.player.cricketfirst.util.font.BoldTextView
+                <fantasy.livematch.firstscore.util.font.BoldTextView
                     android:id="@+id/txtAppName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -80,7 +80,7 @@
                     android:textSize="@dimen/size_12dp" />
 
 
-                <com.player.cricketfirst.util.font.BoldTextView
+                <fantasy.livematch.firstscore.util.font.BoldTextView
                     android:id="@+id/txtInstall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

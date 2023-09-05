@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.player.cricketfirst">
+    package="fantasy.livematch.firstscore">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <application
-        android:name="com.player.cricketfirst.MyApplication"
+        android:name="fantasy.livematch.firstscore.MyApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -20,44 +20,44 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name="com.player.cricketfirst.activity.OfferlistActivity"
+            android:name="fantasy.livematch.firstscore.activity.OfferlistActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.GameFirst.NoActionBar"
             android:exported="false" />
         <activity
-            android:name="com.player.cricketfirst.activity.CricketListActivity"
+            android:name="fantasy.livematch.firstscore.activity.CricketListActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.GameFirst.NoActionBar" />
         <activity
-            android:name="com.player.cricketfirst.activity.MatchPreviewActivity"
+            android:name="fantasy.livematch.firstscore.activity.MatchPreviewActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.GameFirst.NoActionBar" />
         <activity
-            android:name="com.player.cricketfirst.activity.MoreAppActivity"
+            android:name="fantasy.livematch.firstscore.activity.MoreAppActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.GameFirst.NoActionBar" />
         <activity
-            android:name="com.player.cricketfirst.activity.NotificationActivity"
+            android:name="fantasy.livematch.firstscore.activity.NotificationActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.GameFirst.NoActionBar" />
         <activity
-            android:name="com.player.cricketfirst.activity.WebActivity"
+            android:name="fantasy.livematch.firstscore.activity.WebActivity"
             android:exported="false"
             android:label="@string/title_activity_web"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.GameFirst.NoActionBar" />
         <activity
-            android:name="com.player.cricketfirst.activity.MatchDetailsActivity"
+            android:name="fantasy.livematch.firstscore.activity.MatchDetailsActivity"
             android:exported="false"
             android:label="@string/title_activity_match_details"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.GameFirst.NoActionBar" />
         <activity
-            android:name="com.player.cricketfirst.activity.SplashScreenActivity"
+            android:name="fantasy.livematch.firstscore.activity.SplashScreenActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
@@ -78,7 +78,7 @@
         </activity>
 
         <service
-            android:name="com.player.cricketfirst.MyFirebaseMessagingService"
+            android:name="fantasy.livematch.firstscore.MyFirebaseMessagingService"
             android:exported="true"
             android:stopWithTask="false">
             <intent-filter>
@@ -88,7 +88,7 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.player.cricketfirst"
+            android:authorities="fantasy.livematch.firstscore"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
@@ -100,7 +100,7 @@
             android:value="ca-app-pub-3940256099942544~3347511713" />
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
-            android:resource="@mipmap/appicon" />
+            android:resource="@mipmap/logo1" />
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_channel_id"
             android:value="channel_01" />
@@ -109,11 +109,11 @@
             android:value="92Co8xNHTMT2_ta_X74W6xk5o_TBlXVxnDGyLFu93Ks7hCrKEPv0pSVXX44WaMNKPCxelF_Bbr6v1lsgskPsbi" />
 
         <activity
-            android:name="com.player.cricketfirst.activity.MainActivity"
+            android:name="fantasy.livematch.firstscore.activity.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.GameFirst.NoActionBar" />
         <activity
-            android:name="com.player.cricketfirst.activity.MatchFullViewActivity"
+            android:name="fantasy.livematch.firstscore.activity.MatchFullViewActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.GameFirst.NoActionBar" />

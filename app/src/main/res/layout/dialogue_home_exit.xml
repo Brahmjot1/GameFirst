@@ -28,7 +28,7 @@
                 android:layout_width="match_parent"
                 android:orientation="vertical"
                 android:layout_height="wrap_content">
-                <com.player.cricketfirst.util.font.MediumTextView
+                <fantasy.livematch.firstscore.util.font.MediumTextView
                     android:id="@+id/txtTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

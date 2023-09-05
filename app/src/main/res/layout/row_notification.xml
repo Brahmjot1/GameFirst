@@ -56,7 +56,7 @@
                     android:layout_toRightOf="@+id/cardIcon"
                     android:orientation="vertical">
 
-                    <com.player.cricketfirst.util.font.BoldTextView
+                    <fantasy.livematch.firstscore.util.font.BoldTextView
                         android:id="@+id/txtTitle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -64,7 +64,7 @@
                         android:textColor="@color/colorAccent"
                         android:textSize="@dimen/size_12dp" />
 
-                    <com.player.cricketfirst.util.font.BoldTextView
+                    <fantasy.livematch.firstscore.util.font.BoldTextView
                         android:id="@+id/txtDesc"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

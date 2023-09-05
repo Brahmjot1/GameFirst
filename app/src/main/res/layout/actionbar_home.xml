@@ -26,7 +26,7 @@
         </RelativeLayout>
 
 
-        <com.player.cricketfirst.util.font.BoldTextView
+        <fantasy.livematch.firstscore.util.font.BoldTextView
             android:id="@+id/action_bar_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

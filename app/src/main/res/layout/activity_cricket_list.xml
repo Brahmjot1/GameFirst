@@ -22,7 +22,7 @@
             android:src="@drawable/ic_back"
             app:tint="@color/white" />
 
-        <com.player.cricketfirst.util.font.BoldTextView
+        <fantasy.livematch.firstscore.util.font.BoldTextView
             android:id="@+id/txtTooltitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -56,7 +56,7 @@
                 android:layout_marginBottom="@dimen/size_5dp"
                 android:nestedScrollingEnabled="false" />
 
-            <com.player.cricketfirst.util.font.BoldTextView
+            <fantasy.livematch.firstscore.util.font.BoldTextView
                 android:id="@+id/txtNofound"
                 android:textColor="@color/divider"
                 android:text="No Data found"

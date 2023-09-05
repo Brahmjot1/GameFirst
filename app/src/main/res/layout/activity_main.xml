@@ -49,7 +49,7 @@
                             android:scaleType="centerCrop"
                             android:src="@drawable/banner_navigation" />
 
-                        <com.player.cricketfirst.util.font.RegularTextView
+                        <fantasy.livematch.firstscore.util.font.RegularTextView
                             android:id="@+id/txtAppVersion"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -118,7 +118,7 @@
                                         android:src="@drawable/icon_menu_aboutus"
                                         app:tint="@color/white" />
 
-                                    <com.player.cricketfirst.util.font.MediumTextView
+                                    <fantasy.livematch.firstscore.util.font.MediumTextView
                                         android:layout_width="@dimen/size_70dp"
                                         android:layout_height="wrap_content"
                                         android:gravity="center"
@@ -162,7 +162,7 @@
                                         android:src="@drawable/icon_menu_share"
                                         app:tint="@color/white" />
 
-                                    <com.player.cricketfirst.util.font.MediumTextView
+                                    <fantasy.livematch.firstscore.util.font.MediumTextView
                                         android:layout_width="@dimen/size_70dp"
                                         android:layout_height="wrap_content"
                                         android:gravity="center"
@@ -203,7 +203,7 @@
                                         android:src="@drawable/star"
                                         app:tint="@color/white" />
 
-                                    <com.player.cricketfirst.util.font.MediumTextView
+                                    <fantasy.livematch.firstscore.util.font.MediumTextView
                                         android:layout_width="@dimen/size_70dp"
                                         android:layout_height="wrap_content"
                                         android:gravity="center"
@@ -253,7 +253,7 @@
                                         android:src="@drawable/icon_menu_contectus"
                                         app:tint="@color/white" />
 
-                                    <com.player.cricketfirst.util.font.MediumTextView
+                                    <fantasy.livematch.firstscore.util.font.MediumTextView
                                         android:layout_width="@dimen/size_70dp"
                                         android:layout_height="wrap_content"
                                         android:gravity="center"
@@ -299,7 +299,7 @@
                                         android:src="@drawable/icon_menu_privacy"
                                         app:tint="@color/white" />
 
-                                    <com.player.cricketfirst.util.font.MediumTextView
+                                    <fantasy.livematch.firstscore.util.font.MediumTextView
                                         android:layout_width="@dimen/size_70dp"
                                         android:layout_height="wrap_content"
                                         android:gravity="center"
@@ -346,7 +346,7 @@
                                         android:src="@drawable/more_app"
                                         app:tint="@color/white" />
 
-                                    <com.player.cricketfirst.util.font.MediumTextView
+                                    <fantasy.livematch.firstscore.util.font.MediumTextView
                                         android:layout_width="@dimen/size_70dp"
                                         android:layout_height="wrap_content"
                                         android:gravity="center"

@@ -37,7 +37,7 @@
                         android:adjustViewBounds="true"
                         android:scaleType="centerCrop" />
 
-                    <com.player.cricketfirst.util.font.BoldTextView
+                    <fantasy.livematch.firstscore.util.font.BoldTextView
                         android:id="@+id/txtLable"
                         android:layout_width="wrap_content"
                         android:layout_alignParentRight="true"
@@ -54,7 +54,7 @@
 
         </RelativeLayout>
 
-        <com.player.cricketfirst.util.font.MediumTextView
+        <fantasy.livematch.firstscore.util.font.MediumTextView
             android:id="@+id/txtAppName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

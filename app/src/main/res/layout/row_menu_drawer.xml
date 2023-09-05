@@ -55,7 +55,7 @@
                     android:layout_toRightOf="@+id/cardIcon"
                     android:orientation="horizontal">
 
-                    <com.player.cricketfirst.util.font.BoldTextView
+                    <fantasy.livematch.firstscore.util.font.BoldTextView
                         android:id="@+id/txtTitle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -73,7 +73,7 @@
                         android:background="@drawable/bg_preview_right"
                         android:visibility="visible">
 
-                        <com.player.cricketfirst.util.font.BoldTextView
+                        <fantasy.livematch.firstscore.util.font.BoldTextView
                             android:id="@+id/txtLable"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -94,7 +94,7 @@
                 android:background="@drawable/bg_round_new"
                 android:visibility="visible">
 
-                <com.player.cricketfirst.util.font.BoldTextView
+                <fantasy.livematch.firstscore.util.font.BoldTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/size_5dp"

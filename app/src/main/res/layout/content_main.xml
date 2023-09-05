@@ -29,7 +29,7 @@
                 android:orientation="vertical"
                 android:visibility="visible">
 
-                <com.player.cricketfirst.util.recyclerviewpager.RecyclerViewPager
+                <fantasy.livematch.firstscore.util.recyclerviewpager.RecyclerViewPager
                     android:id="@+id/pager"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -96,7 +96,7 @@
                                 android:layout_height="@dimen/size_45dp"
                                 android:src="@drawable/ic_prediction" />
 
-                            <com.player.cricketfirst.util.font.BoldTextView
+                            <fantasy.livematch.firstscore.util.font.BoldTextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/size_4dp"
@@ -138,7 +138,7 @@
                                 android:layout_height="@dimen/size_45dp"
                                 android:src="@drawable/ic_news" />
 
-                            <com.player.cricketfirst.util.font.BoldTextView
+                            <fantasy.livematch.firstscore.util.font.BoldTextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Cricket News"
@@ -189,7 +189,7 @@
                 android:orientation="vertical"
                 android:visibility="gone">
 
-                <com.player.cricketfirst.util.font.BoldTextView
+                <fantasy.livematch.firstscore.util.font.BoldTextView
                     android:id="@+id/txtUpcoming"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -277,7 +277,7 @@
                         android:layout_marginRight="@dimen/size_5dp"
                         android:orientation="horizontal">
 
-                        <com.player.cricketfirst.util.font.BoldTextView
+                        <fantasy.livematch.firstscore.util.font.BoldTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center"
@@ -287,7 +287,7 @@
                             android:textStyle="bold"
                             android:visibility="visible" />
 
-                        <com.player.cricketfirst.util.font.MediumTextView
+                        <fantasy.livematch.firstscore.util.font.MediumTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/size_5dp"

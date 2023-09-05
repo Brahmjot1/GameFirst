@@ -22,7 +22,7 @@
             android:src="@drawable/ic_back"
             app:tint="@color/white" />
 
-        <com.player.cricketfirst.util.font.BoldTextView
+        <fantasy.livematch.firstscore.util.font.BoldTextView
             android:id="@+id/txtTooltitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -56,7 +56,7 @@
             android:background="#F2F7FD" />
     </ScrollView>
 
-    <com.player.cricketfirst.util.font.MediumTextView
+    <fantasy.livematch.firstscore.util.font.MediumTextView
         android:id="@+id/txtNoData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

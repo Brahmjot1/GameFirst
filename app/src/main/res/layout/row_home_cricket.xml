@@ -19,7 +19,7 @@
             android:paddingBottom="@dimen/size_5dp"
             android:orientation="vertical">
 
-            <com.player.cricketfirst.util.font.MediumTextView
+            <fantasy.livematch.firstscore.util.font.MediumTextView
                 android:id="@+id/txtSerisName"
                 android:layout_width="wrap_content"
                 android:layout_gravity="center"
@@ -41,7 +41,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <com.player.cricketfirst.util.font.MediumTextView
+                <fantasy.livematch.firstscore.util.font.MediumTextView
                     android:id="@+id/txtLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -78,7 +78,7 @@
                         android:padding="@dimen/size_5dp"
                         android:scaleType="fitXY" />
 
-                    <com.player.cricketfirst.util.font.BoldTextView
+                    <fantasy.livematch.firstscore.util.font.BoldTextView
                         android:id="@+id/txtTeam1Name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -91,7 +91,7 @@
                         android:textSize="@dimen/size_12dp"
                         android:textStyle="bold" />
 
-                    <com.player.cricketfirst.util.font.BoldTextView
+                    <fantasy.livematch.firstscore.util.font.BoldTextView
                         android:id="@+id/txtTeam1Score"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -116,7 +116,7 @@
                     android:gravity="center"
                     android:layout_height="wrap_content">
 
-                    <com.player.cricketfirst.util.font.BoldTextView
+                    <fantasy.livematch.firstscore.util.font.BoldTextView
                         android:id="@+id/txtOdd1"
                         android:layout_width="wrap_content"
                         android:text="1.0"
@@ -128,7 +128,7 @@
                         android:background="@drawable/bg_odd1"
                         android:layout_height="wrap_content"/>
 
-                    <com.player.cricketfirst.util.font.BoldTextView
+                    <fantasy.livematch.firstscore.util.font.BoldTextView
                         android:id="@+id/txtOdd2"
                         android:layout_width="wrap_content"
                         android:text="1.0"
@@ -150,7 +150,7 @@
                     android:layout_centerHorizontal="true"
                     android:src="@drawable/vs_line" />
 
-                <com.player.cricketfirst.util.font.BoldTextView
+                <fantasy.livematch.firstscore.util.font.BoldTextView
                     android:id="@+id/txtDate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -172,7 +172,7 @@
                     android:layout_marginLeft="@dimen/size_40dp"
                     android:layout_toRightOf="@+id/vs">
 
-                    <com.player.cricketfirst.util.font.BoldTextView
+                    <fantasy.livematch.firstscore.util.font.BoldTextView
                         android:id="@+id/txtTeam2Name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -185,7 +185,7 @@
                         android:textSize="@dimen/size_12dp"
                         android:textStyle="bold" />
 
-                    <com.player.cricketfirst.util.font.BoldTextView
+                    <fantasy.livematch.firstscore.util.font.BoldTextView
                         android:id="@+id/txtTeam2Score"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -220,7 +220,7 @@
                 android:paddingBottom="@dimen/size_3dp"
                 android:orientation="vertical">
 
-                <com.player.cricketfirst.util.font.MediumTextView
+                <fantasy.livematch.firstscore.util.font.MediumTextView
                     android:id="@+id/txtNote"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

@@ -24,7 +24,7 @@
             android:background="@drawable/rounded_dialog"
             android:elevation="@dimen/size_4dp">
 
-            <com.player.cricketfirst.util.font.BoldTextView
+            <fantasy.livematch.firstscore.util.font.BoldTextView
                 android:id="@+id/tv_exit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

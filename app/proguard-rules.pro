@@ -113,9 +113,9 @@
 -keep class sun.misc.Unsafe { *; }
 -keep class com.google.gson.stream.** { *; }
 -keep class mypersonalclass.data.model.** { *; }
--keep class com.player.cricketfirst.model.** { <fields>; }
+-keep class fantasy.livematch.firstscore.model.** { <fields>; }
 
--keep class com.player.cricketfirst.model.ResponseModel {*;}
--keep class com.player.cricketfirst.model.RequestModel {*;}
--keep class com.player.cricketfirst.model.CategoryModel {*;}
--keep class com.player.cricketfirst.util.storyview.model.MyStory {*;}
+-keep class fantasy.livematch.firstscore.model.ResponseModel {*;}
+-keep class fantasy.livematch.firstscore.model.RequestModel {*;}
+-keep class fantasy.livematch.firstscore.model.CategoryModel {*;}
+-keep class fantasy.livematch.firstscore.util.storyview.model.MyStory {*;}

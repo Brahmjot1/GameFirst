@@ -40,7 +40,7 @@
                     android:paddingBottom="@dimen/size_5dp"
                     android:paddingRight="@dimen/size_5dp">
 
-                    <com.player.cricketfirst.util.font.BoldTextView
+                    <fantasy.livematch.firstscore.util.font.BoldTextView
                         android:id="@+id/txtTitle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -50,7 +50,7 @@
                         android:textColor="@color/black"
                         android:textSize="@dimen/size_12dp" />
 
-                    <com.player.cricketfirst.util.font.BoldTextView
+                    <fantasy.livematch.firstscore.util.font.BoldTextView
                         android:id="@+id/txtDesc"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -62,7 +62,7 @@
 
                 </LinearLayout>
 
-                <com.player.cricketfirst.util.font.BoldTextView
+                <fantasy.livematch.firstscore.util.font.BoldTextView
                     android:id="@+id/txtBtnName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

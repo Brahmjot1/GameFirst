@@ -41,7 +41,7 @@
                     android:visibility="invisible"
                     app:tint="@color/white" />
 
-                <com.player.cricketfirst.util.font.BoldTextView
+                <fantasy.livematch.firstscore.util.font.BoldTextView
                     android:id="@+id/tvTimerText"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -78,7 +78,7 @@
                     android:layout_gravity="center_horizontal"
                     android:adjustViewBounds="true" />
 
-                <com.player.cricketfirst.util.font.BoldTextView
+                <fantasy.livematch.firstscore.util.font.BoldTextView
                     android:id="@+id/tvTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -115,7 +115,7 @@
                 </RelativeLayout>
 
 
-                <com.player.cricketfirst.util.font.BoldTextView
+                <fantasy.livematch.firstscore.util.font.BoldTextView
                     android:id="@+id/tvDescription"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -128,7 +128,7 @@
                     android:textColor="@color/white"
                     android:textSize="@dimen/size_15dp" />
 
-                <com.player.cricketfirst.util.font.BoldTextView
+                <fantasy.livematch.firstscore.util.font.BoldTextView
                     android:id="@+id/btnAction"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/size_50dp"
@@ -146,7 +146,7 @@
             </LinearLayout>
         </ScrollView>
 
-        <com.player.cricketfirst.util.font.BoldTextView
+        <fantasy.livematch.firstscore.util.font.BoldTextView
             android:id="@+id/tvNote"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
