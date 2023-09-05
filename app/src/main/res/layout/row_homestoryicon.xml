@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relStory"
+            android:layout_width="@dimen/size_65dp"
+            android:layout_height="@dimen/size_70dp">
+
+            <ProgressBar
+                android:id="@+id/probr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:theme="@style/Progressbar.White"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/lStory"
+                android:layout_width="@dimen/size_50dp"
+                android:layout_height="@dimen/size_50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/size_5dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/size_3dp"
+                    android:innerRadius="0dp"
+                    android:shape="ring"
+                    android:visibility="visible"
+                    app:cardCornerRadius="@dimen/size_50dp"
+                    app:cardElevation="@dimen/size_2dp">
+
+                    <ImageView
+                        android:id="@+id/ivBanner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/ivGIF"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:visibility="gone" />
+
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+            <com.player.cricketfirst.util.font.MediumTextView
+                android:id="@+id/txtTitleStory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lStory"
+                android:layout_centerHorizontal="true"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size_9dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

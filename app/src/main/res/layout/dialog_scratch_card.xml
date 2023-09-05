@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_scratch_screen"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/layoutParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingPrefix">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_60dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/size_35dp"
+                android:layout_height="@dimen/size_35dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_margin="@dimen/size_20dp"
+                android:animateLayoutChanges="true"
+                android:background="@drawable/round_scratch_card_timer"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/ivClose"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/size_10dp"
+                    android:src="@drawable/ic_close"
+                    android:visibility="invisible"
+                    app:tint="@color/white" />
+
+                <com.player.cricketfirst.util.font.BoldTextView
+                    android:id="@+id/tvTimerText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_14dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/layoutContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/size_20dp"
+                android:paddingBottom="@dimen/size_10dp"
+                android:paddingRight="@dimen/size_20dp"
+                android:paddingTop="@dimen/size_20dp">
+                <ImageView
+                    android:id="@+id/ivLogo"
+                    android:layout_width="@dimen/size_150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:adjustViewBounds="true" />
+
+                <com.player.cricketfirst.util.font.BoldTextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/size_10dp"
+                    android:includeFontPadding="false"
+                    android:text="Give us a rating"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_16dp" />
+
+                <RelativeLayout
+                    android:layout_width="@dimen/size_200dp"
+                    android:layout_height="@dimen/size_200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/size_20dp"
+                    android:background="@drawable/bg_scratch"
+                    android:elevation="@dimen/size_5dp">
+
+                    <ImageView
+                        android:id="@+id/ivBackImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/size_10dp"
+                        android:adjustViewBounds="true" />
+
+                    <in.myinnos.androidscratchcard.ScratchCard
+                        android:id="@+id/scratchCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+
+
+                <com.player.cricketfirst.util.font.BoldTextView
+                    android:id="@+id/tvDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_20dp"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    android:includeFontPadding="false"
+                    android:text="Rate us, please? It would take only a few seconds and it would mean a whole lot to us!"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_15dp" />
+
+                <com.player.cricketfirst.util.font.BoldTextView
+                    android:id="@+id/btnAction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size_50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/size_20dp"
+                    android:layout_marginBottom="@dimen/size_10dp"
+                    android:elevation="@dimen/size_2dp"
+                    android:gravity="center"
+                    android:text="Claim Bonus"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/size_18dp"
+                    android:background="@drawable/bg_btn_bonus" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <com.player.cricketfirst.util.font.BoldTextView
+            android:id="@+id/tvNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_20dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="Rate us, please? It would take only a few seconds and it would mean a whole lot to us!"
+            android:textAllCaps="false"
+            android:textColor="@color/offwhite"
+            android:textSize="@dimen/size_11dp" />
+    </LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/celebrate" />
+
+</RelativeLayout>

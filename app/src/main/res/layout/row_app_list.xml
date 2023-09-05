@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/cardApps"
+        android:layout_width="wrap_content"
+        android:layout_margin="@dimen/size_3dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivBgBanner">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/size_65dp"
+                android:layout_height="@dimen/size_65dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/size_4dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/size_5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/ivIcon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop" />
+
+                    <com.player.cricketfirst.util.font.BoldTextView
+                        android:id="@+id/txtLable"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text=""
+                        android:textSize="@dimen/size_8dp"
+                        android:textColor="@color/white"
+                        android:paddingLeft="@dimen/size_3dp"
+                        android:paddingRight="@dimen/size_3dp"
+                        android:background="@drawable/bg_label"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <com.player.cricketfirst.util.font.MediumTextView
+            android:id="@+id/txtAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="@dimen/size_5dp"
+            android:layout_marginTop="@dimen/size_2dp"
+            android:layout_marginLeft="@dimen/size_5dp"
+            android:layout_gravity="center   "
+            android:text="@string/app_name"
+            android:layout_toLeftOf="@+id/txtInstall"
+            android:textColor="@color/greay"
+            android:textSize="@dimen/size_10dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#07B18A</color>
+    <color name="purple_500">#07B18A</color>
+    <color name="purple_700">#07B18A</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black_transparent">#80000000</color>
+    <color name="colorPrimary">#07B18A</color>
+    <color name="splashBgcolor">#07B18A</color>
+    <color name="colorPrimaryDark">#07B18A</color>
+    <color name="colorAccent">#07B18A</color>
+    <color name="cardColor">#07B18A</color>
+    <color name="cardPinkColor">#04101F</color>
+    <color name="desColor">#7E7F80</color>
+    <color name="blue">#0A06AA</color>
+    <color name="offwhite">#B7EBEAEA</color>
+    <color name="path_orange">#FF9500</color>
+    <color name="blacklight">#AD000000</color>
+    <color name="orange">#F8560A</color>
+    <color name="red">#C61D24</color>
+    <color name="pink">#F60868</color>
+    <color name="divider">#9C9A9A</color>
+    <color name="divider1">#BEBBB8B8</color>
+    <color name="greay">#7E7F80</color>
+    <color name="green">#1D9E10</color>
+    <color name="bg">#EFF0F1</color>
+    <color name="c_756F86">#79777C</color>
+    <color name="c_14A38B">#14A38B</color>
+    <color name="gray_scale">#8affffff</color>
+    <color name="progress_primary">@color/white</color>
+    <color name="progress_secondary">@color/gray_scale</color>
+    <color name="progress_max_active">@color/white</color>
+
+    <color name="filter_ad_bg">#36BDBDBD</color>
+
+    <color name="shadow_1">#20CCCCCC</color>
+    <color name="shadow_2">#40CCCCCC</color>
+    <color name="shadow_3">#50CCCCCC</color>
+    <color name="shadow_4">#60CCCCCC</color>
+    <color name="gray_color_ad_bg_border">#BDBDBD</color>
+</resources>

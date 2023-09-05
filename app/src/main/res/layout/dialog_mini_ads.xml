@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_close_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CB000000">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/size_140dp"
+        android:layout_marginRight="@dimen/size_15dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/size_15dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/size_10dp"
+        app:cardElevation="@dimen/size_8dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/size_10dp"
+            android:layout_margin="@dimen/size_1dp"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/relMiniAds"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/probrBanner"
+                    android:layout_width="@dimen/size_20dp"
+                    android:layout_height="@dimen/size_20dp"
+                    android:layout_centerInParent="true" />
+
+                <ImageView
+                    android:id="@+id/imgBannerMiniAds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true" />
+
+                <ImageView
+                    android:id="@+id/ivCloseMiniAds"
+                    android:layout_width="@dimen/size_25dp"
+                    android:layout_height="@dimen/size_25dp"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/size_5dp"
+                    android:src="@drawable/ic_close" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

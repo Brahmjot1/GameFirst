@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.MatchPreviewActivity">
+
+    <RelativeLayout
+        android:id="@+id/relToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/size_20dp"
+            android:layout_height="@dimen/size_20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/white" />
+
+        <com.player.cricketfirst.util.font.BoldTextView
+            android:id="@+id/txtTooltitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:layout_toRightOf="@+id/ivBack"
+            android:text="Team Preview"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_14dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:visibility="visible"
+        android:adjustViewBounds="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:id="@+id/banner_container_top"
+        android:layout_below="@+id/relToolbar"
+        android:layout_height="wrap_content"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_above="@+id/banner_container_bottom"
+        android:layout_below="@+id/banner_container_top"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcTeamList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:visibility="visible" />
+
+            <com.player.cricketfirst.util.font.MediumTextView
+                android:id="@+id/txtNoData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/size_20dp"
+                android:textColor="@color/greay"
+                android:textSize="@dimen/size_14dp" />
+
+            <com.player.cricketfirst.util.font.BoldTextView
+                android:id="@+id/txtNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/banner_container_bottom"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/size_8dp"
+                android:layout_marginRight="@dimen/size_8dp"
+                android:layout_marginTop="@dimen/size_5dp"
+                android:layout_marginBottom="@dimen/size_3dp"
+                android:background="@drawable/bg_exit_button"
+                android:padding="@dimen/size_5dp"
+                android:textColor="@color/divider1"
+                android:textSize="@dimen/size_11dp"
+                android:visibility="visible" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/banner_container_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/size_5dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</RelativeLayout>

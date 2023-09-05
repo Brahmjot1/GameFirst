@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/loutMain"
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/size_8dp"
+        app:cardElevation="@dimen/size_5dp"
+        android:layout_margin="@dimen/size_5dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/size_5dp"
+            android:orientation="vertical">
+
+            <com.player.cricketfirst.util.font.MediumTextView
+                android:id="@+id/txtSerisName"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_5dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/size_3dp"
+                android:paddingTop="@dimen/size_3dp"
+                android:paddingLeft="@dimen/size_3dp"
+                android:paddingRight="@dimen/size_5dp"
+                android:background="@drawable/bg_paid_btn"
+                android:text="WT20 Qualifire-Asia"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_9dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.player.cricketfirst.util.font.MediumTextView
+                    android:id="@+id/txtLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/labelbg"
+                    android:padding="@dimen/size_3dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_8dp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relTeams"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/loutLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:layout_marginRight="@dimen/size_40dp"
+                    android:layout_toLeftOf="@+id/vs">
+
+                    <ImageView
+                        android:id="@+id/imgTeam1"
+                        android:layout_width="@dimen/size_45dp"
+                        android:layout_height="@dimen/size_45dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/sqaure_round_red"
+                        android:padding="@dimen/size_5dp"
+                        android:scaleType="fitXY" />
+
+                    <com.player.cricketfirst.util.font.BoldTextView
+                        android:id="@+id/txtTeam1Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgTeam1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/size_5dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/size_12dp"
+                        android:textStyle="bold" />
+
+                    <com.player.cricketfirst.util.font.BoldTextView
+                        android:id="@+id/txtTeam1Score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtTeam1Name"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/size_2dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/divider"
+                        android:textSize="@dimen/size_10dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/lObb"
+                    android:layout_width="@dimen/size_50dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    android:layout_marginBottom="@dimen/size_5dp"
+                    android:layout_marginTop="@dimen/size_8dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <com.player.cricketfirst.util.font.BoldTextView
+                        android:id="@+id/txtOdd1"
+                        android:layout_width="wrap_content"
+                        android:text="1.0"
+                        android:visibility="gone"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_10dp"
+                        android:paddingLeft="@dimen/size_3dp"
+                        android:paddingRight="@dimen/size_3dp"
+                        android:background="@drawable/bg_odd1"
+                        android:layout_height="wrap_content"/>
+
+                    <com.player.cricketfirst.util.font.BoldTextView
+                        android:id="@+id/txtOdd2"
+                        android:layout_width="wrap_content"
+                        android:text="1.0"
+                        android:layout_marginLeft="@dimen/size_5dp"
+                        android:textColor="@color/white"
+                        android:visibility="gone"
+                        android:textSize="@dimen/size_10dp"
+                        android:paddingLeft="@dimen/size_3dp"
+                        android:paddingRight="@dimen/size_3dp"
+                        android:background="@drawable/bg_odd2"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/vs"
+                    android:layout_width="@dimen/size_60dp"
+                    android:layout_height="@dimen/size_30dp"
+                    android:layout_below="@+id/lObb"
+                    android:scaleType="centerCrop"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/vs_line" />
+
+                <com.player.cricketfirst.util.font.BoldTextView
+                    android:id="@+id/txtDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vs"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:gravity="center"
+                    android:padding="@dimen/size_3dp"
+                    android:text="22-07-2019"
+                    android:textColor="@color/cardColor"
+                    android:textSize="@dimen/size_9dp" />
+
+                <RelativeLayout
+                    android:id="@+id/loutRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:layout_marginLeft="@dimen/size_40dp"
+                    android:layout_toRightOf="@+id/vs">
+
+                    <com.player.cricketfirst.util.font.BoldTextView
+                        android:id="@+id/txtTeam2Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgTeam2"
+                        android:layout_marginTop="@dimen/size_5dp"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/size_12dp"
+                        android:textStyle="bold" />
+
+                    <com.player.cricketfirst.util.font.BoldTextView
+                        android:id="@+id/txtTeam2Score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtTeam2Name"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/size_2dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/divider"
+                        android:textSize="@dimen/size_10dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imgTeam2"
+                        android:layout_width="@dimen/size_45dp"
+                        android:layout_height="@dimen/size_45dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/sqaure_round_red"
+                        android:padding="@dimen/size_5dp"
+                        android:scaleType="fitXY" />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/size_3dp"
+                android:layout_marginTop="@dimen/size_5dp"
+                android:paddingBottom="@dimen/size_3dp"
+                android:orientation="vertical">
+
+                <com.player.cricketfirst.util.font.MediumTextView
+                    android:id="@+id/txtNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text=""
+                    android:paddingTop="@dimen/size_3dp"
+                    android:paddingBottom="@dimen/size_3dp"
+                    android:background="@drawable/notebg"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_10dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/loutMainBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_10dp"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:layout_marginBottom="@dimen/size_10dp"
+        app:cardCornerRadius="@dimen/size_8dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginRight="@dimen/size_10dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgBanner"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:visibility="gone" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

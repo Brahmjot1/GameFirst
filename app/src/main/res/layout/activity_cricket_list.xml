@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/offwhite"
+    android:layout_height="match_parent"
+    tools:context=".activity.CricketListActivity">
+
+    <RelativeLayout
+        android:id="@+id/relToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/size_20dp"
+            android:layout_height="@dimen/size_20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/white" />
+
+        <com.player.cricketfirst.util.font.BoldTextView
+            android:id="@+id/txtTooltitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:layout_toRightOf="@+id/ivBack"
+            android:text="Match Prediction"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_14dp" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@+id/relToolbar"
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:id="@+id/nestedScroll"
+        android:layout_above="@+id/banner_container"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCricketList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/size_5dp"
+                android:layout_marginTop="@dimen/size_5dp"
+                android:layout_marginEnd="@dimen/size_5dp"
+                android:layout_marginBottom="@dimen/size_5dp"
+                android:nestedScrollingEnabled="false" />
+
+            <com.player.cricketfirst.util.font.BoldTextView
+                android:id="@+id/txtNofound"
+                android:textColor="@color/divider"
+                android:text="No Data found"
+                android:visibility="visible"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/cardNative"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/size_3dp"
+        android:layout_marginBottom="@dimen/size_3dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</RelativeLayout>

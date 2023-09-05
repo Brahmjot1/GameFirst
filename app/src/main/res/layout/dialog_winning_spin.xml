@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_close_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A8000000">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardWin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_320dp"
+        android:layout_marginLeft="@dimen/size_25dp"
+        android:layout_marginRight="@dimen/size_25dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/size_10dp"
+        app:cardElevation="@dimen/size_8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="@dimen/size_26dp"
+                android:layout_height="@dimen/size_26dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_margin="@dimen/size_10dp"
+                android:animateLayoutChanges="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/round_scratch_card_timer"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/ivClose"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/size_6dp"
+                    android:src="@drawable/ic_close"
+                    android:visibility="invisible"
+                    app:tint="@color/white" />
+
+                <com.player.cricketfirst.util.font.BoldTextView
+                    android:id="@+id/tvTimerText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_13dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_margin="@dimen/size_10dp"
+                android:orientation="vertical">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/ltCelebrate"
+                    android:layout_width="@dimen/size_100dp"
+                    android:layout_height="@dimen/size_100dp"
+                    android:layout_marginBottom="1dp"
+                    app:lottie_autoPlay="true"
+                    android:visibility="visible"
+                    app:lottie_rawRes="@raw/trophy"
+                    app:lottie_loop="true" />
+
+                <ImageView
+                    android:id="@+id/ivLogo"
+                    android:layout_width="@dimen/size_150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:adjustViewBounds="true" />
+
+                <com.player.cricketfirst.util.font.BoldTextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/size_10dp"
+                    android:includeFontPadding="false"
+                    android:text="Ttile"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/size_14dp" />
+
+                <com.player.cricketfirst.util.font.MediumTextView
+                    android:id="@+id/tvDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/size_8dp"
+                    android:includeFontPadding="false"
+                    android:text="Ttile"
+                    android:textColor="@color/divider"
+                    android:textSize="@dimen/size_12dp" />
+
+                <com.player.cricketfirst.util.font.BoldTextView
+                    android:id="@+id/btnClaim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size_38dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/size_15dp"
+                    android:layout_marginBottom="@dimen/size_10dp"
+                    android:elevation="@dimen/size_2dp"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/size_15dp"
+                    android:paddingRight="@dimen/size_15dp"
+                    android:text="Claim Bonus"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:background="@drawable/bg_claim_bonus"
+                    android:textSize="@dimen/size_13dp" />
+
+            </LinearLayout>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/ltCelebrateFire"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dp"
+                android:visibility="visible"
+                app:lottie_autoPlay="false"
+                app:lottie_loop="false"
+                app:lottie_rawRes="@raw/celebrate" />
+
+            <com.player.cricketfirst.util.font.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_ads_key"
+                android:padding="@dimen/size_3dp"
+                android:text="Ad"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_8dp" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

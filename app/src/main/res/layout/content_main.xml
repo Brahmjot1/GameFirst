@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_color_ad_bg_border"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/banner_container"
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/banner_container"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/size_8dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/loutSlider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_130dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <com.player.cricketfirst.util.recyclerviewpager.RecyclerViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:svp_colorActiveIndicator="@color/white"
+                    app:svp_colorInactiveIndicator="@color/divider1"
+                    app:svp_runAuto="true"
+                    app:svp_timeMillis="5000" />
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardWebTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_marginTop="@dimen/size_8dp"
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/size_10dp"
+                app:cardBackgroundColor="@color/cardColor"
+                app:cardCornerRadius="@dimen/size_8dp"
+                app:cardElevation="@dimen/size_8dp">
+
+                <WebView
+                    android:id="@+id/webNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    tools:ignore="WebViewLayout" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_marginTop="@dimen/size_8dp"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:padding="1dp"
+                android:layout_marginBottom="@dimen/size_8dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/size_80dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/cardColor"
+                    app:cardCornerRadius="@dimen/size_8dp"
+                    app:cardElevation="@dimen/size_8dp">
+
+                    <RelativeLayout
+                        android:id="@+id/relPrediction"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/size_45dp"
+                                android:layout_height="@dimen/size_45dp"
+                                android:src="@drawable/ic_prediction" />
+
+                            <com.player.cricketfirst.util.font.BoldTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/size_4dp"
+                                android:text="Cricket Predictions"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/size_12dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardNews"
+                    android:layout_marginLeft="@dimen/size_10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/size_80dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/cardColor"
+                    app:cardCornerRadius="@dimen/size_8dp"
+                    app:cardElevation="@dimen/size_8dp">
+
+                    <RelativeLayout
+                        android:id="@+id/relCricketNews"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="@dimen/size_45dp"
+                                android:layout_height="@dimen/size_45dp"
+                                android:src="@drawable/ic_news" />
+
+                            <com.player.cricketfirst.util.font.BoldTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cricket News"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/size_12dp"
+                                android:layout_marginTop="@dimen/size_4dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardNative"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_250dp"
+                android:layout_marginTop="@dimen/size_8dp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:layout_marginBottom="@dimen/size_8dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/size_8dp"
+                app:cardElevation="@dimen/size_2dp">
+
+                <FrameLayout
+                    android:id="@+id/adLayoutLovin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/size_5dp"
+                    android:visibility="gone" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/loutInflate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.player.cricketfirst.util.font.BoldTextView
+                    android:id="@+id/txtUpcoming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_10dp"
+                    android:layout_marginRight="@dimen/size_10dp"
+                    android:gravity="center"
+                    android:text="Upcoming Cricket Matches"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_10dp"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcList"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardOfferList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:layout_marginBottom="@dimen/size_10dp"
+                app:cardBackgroundColor="@color/cardColor"
+                app:cardCornerRadius="@dimen/size_8dp"
+                app:cardElevation="@dimen/size_8dp">
+
+                <ImageView
+                    android:id="@+id/ivOfferlist"
+                    android:layout_width="match_parent"
+                    android:adjustViewBounds="true"
+                    android:layout_height="wrap_content"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardWebBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_marginTop="@dimen/size_5dp"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:layout_marginBottom="@dimen/size_10dp"
+                app:cardBackgroundColor="@color/cardColor"
+                app:cardCornerRadius="@dimen/size_8dp"
+                app:cardElevation="@dimen/size_8dp">
+
+                <WebView
+                    android:id="@+id/webNoteBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    tools:ignore="WebViewLayout" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardSuggestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:layout_marginBottom="@dimen/size_8dp"
+                app:cardBackgroundColor="@color/cardColor"
+                app:cardCornerRadius="@dimen/size_8dp"
+                app:cardElevation="@dimen/size_0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/size_5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size_5dp"
+                        android:layout_marginRight="@dimen/size_5dp"
+                        android:orientation="horizontal">
+
+                        <com.player.cricketfirst.util.font.BoldTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Ad"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_11dp"
+                            android:textStyle="bold"
+                            android:visibility="visible" />
+
+                        <com.player.cricketfirst.util.font.MediumTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/size_5dp"
+                            android:gravity="center"
+                            android:text="Suggestion for you"
+                            android:textColor="@color/offwhite"
+                            android:textSize="@dimen/size_10dp"
+                            android:textStyle="bold"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvApplist"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/size_5dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</RelativeLayout>

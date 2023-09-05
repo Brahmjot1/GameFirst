@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.player.cricketfirst">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:name="com.player.cricketfirst.MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/logo1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GameFirst"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name="com.player.cricketfirst.activity.OfferlistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.GameFirst.NoActionBar"
+            android:exported="false" />
+        <activity
+            android:name="com.player.cricketfirst.activity.CricketListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.GameFirst.NoActionBar" />
+        <activity
+            android:name="com.player.cricketfirst.activity.MatchPreviewActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.GameFirst.NoActionBar" />
+        <activity
+            android:name="com.player.cricketfirst.activity.MoreAppActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.GameFirst.NoActionBar" />
+        <activity
+            android:name="com.player.cricketfirst.activity.NotificationActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.GameFirst.NoActionBar" />
+        <activity
+            android:name="com.player.cricketfirst.activity.WebActivity"
+            android:exported="false"
+            android:label="@string/title_activity_web"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.GameFirst.NoActionBar" />
+        <activity
+            android:name="com.player.cricketfirst.activity.MatchDetailsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_match_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.GameFirst.NoActionBar" />
+        <activity
+            android:name="com.player.cricketfirst.activity.SplashScreenActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="cricketfirst.page.link"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.player.cricketfirst.MyFirebaseMessagingService"
+            android:exported="true"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.player.cricketfirst"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/appicon" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="channel_01" />
+        <meta-data
+            android:name="applovin.sdk.key"
+            android:value="92Co8xNHTMT2_ta_X74W6xk5o_TBlXVxnDGyLFu93Ks7hCrKEPv0pSVXX44WaMNKPCxelF_Bbr6v1lsgskPsbi" />
+
+        <activity
+            android:name="com.player.cricketfirst.activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.GameFirst.NoActionBar" />
+        <activity
+            android:name="com.player.cricketfirst.activity.MatchFullViewActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.GameFirst.NoActionBar" />
+    </application>
+
+</manifest>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_close_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CB000000">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/size_20dp"
+        android:layout_marginRight="@dimen/size_20dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivCloseSpin"
+            android:layout_width="@dimen/size_23dp"
+            android:layout_height="@dimen/size_23dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="@dimen/size_3dp"
+            android:layout_marginTop="@dimen/size_3dp"
+            android:layout_marginEnd="@dimen/size_3dp"
+            android:src="@drawable/ic_close"
+            app:tint="@color/divider" />
+        <LinearLayout
+            android:id="@+id/relMiniAds"
+            android:layout_below="@+id/ivCloseSpin"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/size_5dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivSpin"
+                    android:layout_width="@dimen/size_250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/iv_win_to_spin" />
+
+                <rubikstudio.library.LuckyWheelView
+                    android:id="@+id/luckyWheel_spinner"
+                    android:layout_width="@dimen/size_225dp"
+                    android:layout_height="@dimen/size_225dp"
+                    android:layout_below="@+id/ivSpin"
+                    android:layout_centerHorizontal="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:lkwBackgroundColor="@color/colorAccent"
+                    app:lkwCenterImage="@drawable/spin_center"
+                    app:lkwCursor="@drawable/ic_cursor"
+                    app:lkwTextColor="@color/white"></rubikstudio.library.LuckyWheelView>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/btnSpin"
+                android:layout_width="@dimen/size_160dp"
+                android:src="@drawable/spin_now"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="@dimen/size_20dp"
+                android:layout_marginBottom="@dimen/size_15dp"
+                android:layout_height="@dimen/size_50dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
